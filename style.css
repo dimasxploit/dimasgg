@@ -1,0 +1,70 @@
+ *{
+    overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .menu {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 15%;
+    height: 100vh;
+    padding: 50px;
+ }.menu p {
+    margin: 40px;
+    margin-left: 0px;
+    line-height: 30px;
+    width: 100px;
+    display: flex; justify-content: space-evenly; align-items: center; 
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+ }.menu .aktif{
+    color: black;
+    background-color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    width: 100px;
+    border-radius: 3px;
+ }.menu p:hover{
+    color: black;
+    background-color: aliceblue;
+ }
+
+ .he {
+    color: aliceblue;
+    margin: 7.8px;
+ }
+
+ @media screen and (max-width: 1000px){
+   body {
+      flex-direction: column;
+   }
+    .menu{
+        width: 50%;
+        border-bottom-right-radius: 6pc;
+        height: 0px;
+        position: absolute;
+    }.menu h3{
+        margin-top: -10px;
+    }.menu:hover {
+        height: 100vh;
+        width: 50%;
+        border-bottom-right-radius: 0px;
+        
+    }
+
+ }
+
+ .kanan {
+   background-color: aqua;
+   width: 10px;
+ }
